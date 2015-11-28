@@ -1,0 +1,232 @@
+body{
+	color:#808080;
+	background-color:#f3f3f3;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	margin:0;
+	padding:0;
+}
+#container{
+	width:90%;
+	margin:0 auto;
+	padding:0;
+	background-color:#EDEDE7;	
+}
+#topBar{
+	display: -webkit-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+  	overflow: hidden;
+}
+header{
+	padding:10px;
+	margin:0;
+	background-color:#3B9CD9;
+	background-image:url(../images/crop-renewable-energy.png);
+	background-position:right bottom;
+	background-repeat:no-repeat;
+	height:160px;
+	flex:2;
+}
+header h1, header h2{
+	color:#fff;
+	margin-left:20px;
+	font-weight:400;
+}
+#navButton{
+	display:none;	
+}
+#contactUs{
+	background-color:#FF9900;
+	margin:0;
+	flex:1;
+	padding:10px;
+}
+#contactUs label{
+	display:block;
+	color:#fff;
+	padding-bottom:10px;
+	margin-bottom:20px;
+	border-bottom:1px solid #fff;	
+}
+input[type=email]{
+	display:inline-block;
+	padding:0 2px 0 10px;
+	font-size:1.2em;
+	margin-left:0;	
+	height: 40px;
+	width: 250px;
+	border:none;
+}
+input[type=submit], button {
+    background: #428BCA;
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+    /*line-height: 40px;*/
+    margin: 25px 0 0 0;
+	padding:0;
+    text-align: center;
+    border: 0;
+}
+.error{
+	padding:2px 2px 2px 10px;
+	margin:0;
+	font-size:0.8em;
+	font-weight:bold;
+	color:#F00;	
+	background-color:#fff;
+	 box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border:3px solid #f00;
+	 width: 264px;
+	display:none;
+}
+nav{
+	background-color:#3a3a3a;	
+}
+nav, ul{
+	margin:0;
+	padding:0;	
+}
+nav li{
+	margin:0;
+	list-style:none;
+	display:inline-block;
+}
+nav li a{
+	display:inline-block;
+	border-left:1px solid #666;
+	padding:8px 18px;
+	text-decoration:none;
+	color:#fff;
+	font-size:0.8em;
+	font-weight:200;
+}
+nav li:first-child a{
+	border-left:none;
+}
+nav li a:hover{
+	background-color:#000;
+}
+.mainContainer{
+	display: -webkit-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+  	overflow: hidden;
+	margin-bottom:110px;
+}
+.mainContainer section{
+	flex:2;	
+	padding:10px;
+	margin:0;
+
+}
+h3{
+	font-weight:400;	
+	letter-spacing:2px;
+}
+.sideMenu{
+	color:#3a3a3a;
+	box-sizing: border-box;
+	margin:0;
+	padding:10px 10px 40px 10px;
+	flex:1;
+	background-color:#CCCC9F;
+	font-size:0.95em;
+}
+.sideMenu ul{
+	list-style:none;
+	padding-left:0;
+}
+.sideMenu ul>li{
+	border-bottom:1px solid #fff;
+	padding:5px 0;
+}
+.sideMenu ul>li>a{
+	text-decoration:none;
+	color:#3a3a3a;
+}
+
+footer{
+	color:#fff;
+	background-color:#3a3a3a;
+	padding:10px;
+	text-align:center;
+	clear:both;	
+	position:fixed;
+	bottom:0px;
+	width:100%
+}
+footer>p{
+	font-size:0.7em;	
+}
+.socialList>li{
+	display:inline-block;
+}
+.socialList>li>a{
+	text-decoration:none;
+	color:#fff;	
+	font-size:1.5em;
+}
+figure{
+	float:right;
+	padding:5px;
+	margin:5px;
+	border:1px solid  #666;	
+	background-color:#FFC;
+}
+figcaption{
+	text-align:center;
+	font-size:0.8em;	
+}
+.lowlight{
+	color:#069;
+	opacity:0.6;
+	font-style:italic;
+}
+.highlight{
+	color:#000;
+	opacity:1;
+	font-style:normal;
+	font-weight:bold;
+}
+
+#moreContent{
+	/*display:none;	 */
+}
+.infoPanel{
+	display:none;	
+}
+
+tr{
+	background-color:#CC9;	
+}
+.alt{
+	background-color:#666;	
+}
+#welcomeBanner{
+	position:absolute;
+	top:1px;
+	left:1px;
+	background-color:#FFCC66;
+	width:100%;
+	font-weight:bold;
+	font-size:25px;
+	text-align:center;
+	padding:5px 10px;
+	margin:0;
+}
+#welcomeBanner p{
+	padding:0;
+	margin:0;
+}
+#welcomeBanner img{
+	vertical-align:middle;
+	padding-left:20px;
+	cursor:pointer;
+}
+
+

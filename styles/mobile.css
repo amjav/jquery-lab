@@ -1,0 +1,70 @@
+#container{
+	width:100%;
+}
+#topBar, .mainContainer{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+}
+header{
+	background-image:none;	
+	height:auto;
+}
+header h1{
+	font-size:1.2em;	
+}
+header h2{
+	font-size:1.1em;	
+}
+#navButton{
+	display:block;
+	position:absolute;
+	z-index:1;
+	top:5px;
+	right:5px;
+	color:#fff;	
+	font-size:1.2em;
+}
+figure{
+	float:none;
+	display:block;
+	margin:auto;
+	text-align:center;
+}
+figure img{
+	width:80%;
+	height:80%;	
+}
+footer{
+	position:static;	
+}
+nav{
+	display:none;	
+}
+nav, ul{
+	margin:0;
+	padding:0;	
+}
+nav li{
+	margin:0;
+	list-style:none;
+	display:block;
+}
+nav li a{
+	display:block;
+	border-bottom:1px solid #666;
+	border-left:none;
+}
+#welcomeBanner{
+	z-index:2;
+	font-size:1.1em;
+	text-align:left;
+	padding:5px;
+	margin:0;
+}
+#welcomeBanner img{
+	padding:2px;
+}
+
+
