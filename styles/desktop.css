@@ -1,0 +1,75 @@
+#container{
+	width:90%;
+	margin:0 auto;
+	padding:0;
+	background-color:#EDEDE7;	
+}
+nav{
+	display:block;
+}
+#navButton{
+	display:none;	
+}
+nav, ul{
+	margin:0;
+	padding:0;	
+}
+nav li{
+	margin:0;
+	list-style:none;
+	display:inline-block;
+}
+nav li a{
+	display:inline-block;
+	border:none;
+	border-left:1px solid #666;
+	padding:8px 18px;
+	text-decoration:none;
+	color:#fff;
+	font-size:0.8em;
+	font-weight:200;
+}
+nav li:first-child a{
+	border-left:none;
+}
+nav li a:hover{
+	background-color:#000;
+}
+#topBar{
+  	display: flex;
+  	overflow: hidden;
+	flex-direction: row;
+}
+header{
+	padding:10px;
+	margin:0;
+	background-color:#3B9CD9;
+	background-image:url(../images/crop-renewable-energy.png);
+	background-position:right bottom;
+	background-repeat:no-repeat;
+	height:160px;
+	flex:2;
+}
+header h1, header h2{
+	color:#fff;
+	margin-left:20px;
+	font-weight:400;
+	font-size: 2em;
+}
+.mainContainer{
+   flex-direction: row;
+}
+figure{
+	float:right;
+	padding:5px;
+	margin:5px;
+	border:1px solid  #666;	
+	background-color:#FFC;
+}
+footer{
+	position:fixed;	
+}
+#welcomeBanner{
+	font-size:25px;
+	text-align:center;
+}

@@ -1,45 +1,20 @@
+body{
+	color:#808080;
+	background-color:#f3f3f3;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	margin:0;
+	padding:0;
+}
+
 #container{
 	width:100%;
 }
-#topBar, .mainContainer{
-   display: -webkit-flex;
+#topBar{
    display: flex;
-   -webkit-flex-direction: column;
    flex-direction: column;
 }
-header{
-	background-image:none;	
-	height:auto;
-}
-header h1{
-	font-size:1.2em;	
-}
-header h2{
-	font-size:1.1em;	
-}
-#navButton{
-	display:block;
-	position:absolute;
-	z-index:1;
-	top:5px;
-	right:5px;
-	color:#fff;	
-	font-size:1.2em;
-}
-figure{
-	float:none;
-	display:block;
-	margin:auto;
-	text-align:center;
-}
-figure img{
-	width:80%;
-	height:80%;	
-}
-footer{
-	position:static;	
-}
 nav{
+	background-color:#3a3a3a;
 	display:none;	
 }
 nav, ul{
@@ -51,20 +26,219 @@ nav li{
 	list-style:none;
 	display:block;
 }
-nav li a{
-	display:block;
+nav li a {
+    display:block;
+	border:none;
 	border-bottom:1px solid #666;
-	border-left:none;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 200;
 }
-#welcomeBanner{
-	z-index:2;
-	font-size:1.1em;
-	text-align:left;
-	padding:5px;
+#navButton{
+	display:block;
+	position:absolute;
+	z-index:1;
+	top:5px;
+	right:5px;
+	color:#fff;	
+	font-size:1.2em;
+}
+header {
+    padding: 10px;
+    margin: 0;
+    background-color: #3B9CD9;
+	background-image:none;	
+	height:auto;
+}
+header h1{
+	font-size:1.2em;	
+}
+header h2{
+	font-size:1.1em;	
+}
+header h1, header h2{
+	color: #fff;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+
+
+#contactUs{
+	background-color:#FF9900;
+	margin:0;
+	flex:1;
+	padding:10px;
+}
+#contactUs label{
+	display:block;
+	color:#fff;
+	padding-bottom:10px;
+	margin-bottom:20px;
+	border-bottom:1px solid #fff;	
+}
+input[type=email]{
+	display:inline-block;
+	padding:0 2px 0 10px;
+	font-size:1.2em;
+	margin-left:0;	
+	height: 40px;
+	width: 250px;
+	border:none;
+}
+input[type=submit], button {
+    background: #428BCA;
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+    /*line-height: 40px;*/
+    margin: 25px 0 0 0;
+	padding:0;
+    text-align: center;
+    border: 0;
+}
+.error{
+	padding:2px 2px 2px 10px;
+	margin:0;
+	font-size:0.8em;
+	font-weight:bold;
+	color:#F00;	
+	background-color:#fff;
+	box-sizing: border-box;
+	border:3px solid #f00;
+	width: 264px;
+	display:none;
+}
+
+/*
+
+*/
+.mainContainer{
+  	display: flex;
+	flex-direction: column;
+  	overflow: hidden;
+	margin-bottom:110px;
+}
+.mainContainer section{
+	flex:2;	
+	padding:10px;
 	margin:0;
 }
-#welcomeBanner img{
-	padding:2px;
+h3{
+	font-weight:400;	
+	letter-spacing:2px;
+}
+.sideMenu{
+	color:#3a3a3a;
+	box-sizing: border-box;
+	margin:0;
+	padding:10px 10px 40px 10px;
+	flex:1;
+	background-color:#CCCC9F;
+	font-size:0.95em;
+}
+.sideMenu ul{
+	list-style:none;
+	padding-left:0;
+}
+.sideMenu ul>li{
+	border-bottom:1px solid #fff;
+	padding:5px 0;
+}
+.sideMenu ul>li>a{
+	text-decoration:none;
+	color:#3a3a3a;
+}
+footer{
+	color:#fff;
+	background-color:#3a3a3a;
+	padding:10px;
+	text-align:center;
+	clear:both;	
+	position:static;
+	bottom:0px;
+	width:100%
+}
+footer>p{
+	font-size:0.7em;	
+}
+.socialList>li{
+	display:inline-block;
+}
+.socialList>li>a{
+	text-decoration:none;
+	color:#fff;	
+	font-size:1.5em;
 }
 
+figure{
+	float:none;
+	display:block;
+	margin:auto;
+	text-align:center;
+}
+figure img{
+	width:80%;
+	height:80%;	
+}
+figcaption{
+	text-align:center;
+	font-size:0.8em;	
+}
+.lowlight{
+	color:#069;
+	opacity:0.6;
+	font-style:italic;
+}
+.highlight{
+	color:#000;
+	opacity:1;
+	font-style:normal;
+	font-weight:bold;
+}
 
+#moreContent{
+	/*display:none;	 */
+}
+.infoPanel{
+	display:none;	
+}
+
+tr{
+	background-color:#CC9;	
+}
+.alt{
+	background-color:#666;	
+}
+#welcomeBanner{
+	position:absolute;
+	z-index:2;
+	top:1px;
+	left:1px;
+	background-color:#FFCC66;
+	width:100%;
+	font-weight:bold;
+	font-size:1.1em;
+	text-align:left;
+	padding:5px 10px;
+	margin:0;
+}
+#welcomeBanner p{
+	padding:0;
+	margin:0;
+}
+#welcomeBanner div{
+	position:relative;
+	right:20px;
+	top:0;
+}
+#welcomeBanner img{
+	vertical-align:middle;
+	padding-left:20px;
+	cursor:pointer;
+	float: right;
+}
