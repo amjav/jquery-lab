@@ -202,8 +202,9 @@ figcaption{
 }
 
 #moreContent{
-	/*display:none;	 */
+	display:none;	
 }
+
 .infoPanel{
 	display:none;	
 }

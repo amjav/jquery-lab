@@ -1,12 +1,57 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Renewable Energy Consultancy</title>
-<link href="styles/mobile.css" rel="stylesheet" type="text/css">
-<link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="styles/desktop.css" rel="stylesheet" media="only screen and (min-width : 600px)">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renewable Energy Consultancy</title>
+  <link href="styles/mobile.css" rel="stylesheet" type="text/css">
+  <link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="styles/desktop.css" rel="stylesheet" media="only screen and (min-width : 600px)">
+  <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script>
+      //dollar represent the shorthand for jquery
+      //document represents the dom. ready function checks if the dom is ready
+      $(document).ready(function(){
+      //alert("hello, from JQuery.");
+
+      //takes the lowlight class and attaches the highlight one
+      //also removes lowlight class
+      $(".lowlight").addClass("highlight").removeClass("lowlight");
+      //$("p").first().addClass("highlight");
+
+
+      //with vanila javaScript
+      //document.querySelector(".lowlight").setAttribute("class","highlight");
+
+      //javascript events
+      // $("#showMore").click(function(){
+      //   console.info('Hello')
+      // })
+
+      // $("#showMore").on("click", (function(){
+      //   //adds highlight class to the moreContent ID
+      //   //toggles class on or off
+      //   $("#moreContent").toggleClass("highlight");
+      // }))
+
+      $("#showMore").on("click",function(){
+        //show switches from display none
+        //slow or fast keyword displays the text slowly or quickly
+        //or number which is converted into milliseconds
+        $("#moreContent").toggle("fast", function(){
+          if($(this).is(':hidden'))
+          {
+            $("#showMore").text("Show Details");
+          }
+          else
+          {
+            $("#showMore").text("Hide Details")
+          }
+          
+        })
+      })
+    })
+  </script>
 </head>
 <body>
 
